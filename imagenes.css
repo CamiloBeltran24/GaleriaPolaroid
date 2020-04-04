@@ -24,6 +24,8 @@ h1{
     margin-bottom: 10px;
     animation-name: giro;
     animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:  alternate;
 
 }
 img{
@@ -80,7 +82,7 @@ p:nth-child(3){
        transform: rotate(0deg);
    }
    to{
-      transform: rotate(360deg);
+        transform: rotate(360deg);
    }
 }
 
