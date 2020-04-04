@@ -23,6 +23,7 @@ h1{
     padding: 10px;
     margin-bottom: 10px;
     animation-name: giro;
+    animation-duration: 4s;
 
 }
 img{
@@ -76,10 +77,10 @@ p:nth-child(3){
 }
 @keyframes giro {
    from{
-       
+       transform: rotate(0deg);
    }
    to{
-      
+      transform: rotate(360deg);
    }
 }
 
