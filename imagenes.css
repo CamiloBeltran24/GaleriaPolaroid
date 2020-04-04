@@ -1,0 +1,112 @@
+.container{
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+h1{
+    font-style: italic;
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color:white;
+    background-color: tomato;
+    text-shadow: 3px 3px 10px white;
+    padding: 5px;
+}
+.polaroid{
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    animation-name: giro;
+
+}
+img{
+    width: 100%;
+}
+p:nth-child(2){
+    font-weight: 700;
+}
+p:nth-child(3){
+    font-style: italic;
+    font-weight: 300;
+}
+.brightness:hover{
+    filter: brightness(2);
+    transform: translate(15px);
+    transition: ease-in-out;
+    transition-delay: .2s;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+.blur:hover{
+    filter:blur(5px) ;
+    transform: rotate(360deg);
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+}
+.contraste:hover{
+    filter: contrast(1.5);
+    transform: scale(1.2,1.2);
+    transition: ease-in-out;
+    transition-duration: 4s;
+
+}
+.grayscale:hover{
+    filter: grayscale(1);
+    transition: ease-out;
+    transform: skew(10deg);
+    transition-duration: 3s;
+}
+.hue:hover{
+    filter: hue-rotate(180deg);
+}
+.invert:hover{
+    filter: invert(2);
+}
+.saturate:hover{
+    filter: saturate(3);
+}
+.sepia:hover{
+    filter: sepia(1);
+}
+@keyframes giro {
+   from{
+       
+   }
+   to{
+      
+   }
+}
+
+@media screen and (min-width:767px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .centrado{
+        width: 95%;
+    }
+    .polaroid{
+        width: 300px;
+        height: auto;
+        display: inline-block;
+        margin:20px 10px 10px 20px;
+    }
+    .polaroid img{
+        height: 200px;
+    }
+    .contraste:hover{
+        transform: scale(2,2);
+    }
+
+}
+@media screen and (min-width:1024px){
+    .centrado{
+        width: 100%;
+    }
+}
