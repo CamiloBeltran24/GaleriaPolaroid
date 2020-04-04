@@ -22,8 +22,8 @@ h1{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    animation-name: giro;
-    animation-duration: 4s;
+    -moz-animation-name: giro;
+    -moz-animation-duration: 4s;
 
 }
 img{
